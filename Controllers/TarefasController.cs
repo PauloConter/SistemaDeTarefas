@@ -65,9 +65,7 @@ public class TarefasController : ControllerBase
         return CreatedAtAction(nameof(GetTarefa), new { id = tarefa.Id }, tarefa);
     }
 
-
-
-    // GET: api/Tarefas
+    
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Tarefa>>> GetTarefas()
     {
@@ -78,7 +76,7 @@ public class TarefasController : ControllerBase
         return Ok(tarefas);
     }
 
-    // GET: api/Tarefas/5
+    
     [HttpGet("{id}")]
     public async Task<ActionResult<Tarefa>> GetTarefa(int id)
     {
@@ -95,8 +93,7 @@ public class TarefasController : ControllerBase
         return Ok(tarefa);
     }
 
-
-    // PUT: api/Tarefas/5
+    
     [HttpPut("{id}")]
     public async Task<IActionResult> PutTarefa(int id, [FromBody] Tarefa tarefa)
     {
@@ -126,7 +123,7 @@ public class TarefasController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/Tarefas/5
+    
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteTarefa(int id)
     {
