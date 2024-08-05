@@ -55,7 +55,6 @@ public class CategoriasController : ControllerBase
         return CreatedAtAction(nameof(GetCategoria), new { id = categoria.Id }, categoria);
     }
 
-    // PUT: api/Categorias/5
     [HttpPut("{id}")]
     public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
     {
@@ -85,7 +84,6 @@ public class CategoriasController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/Categorias/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteCategoria(int id)
     {
