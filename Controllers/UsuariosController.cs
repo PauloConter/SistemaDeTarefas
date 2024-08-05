@@ -52,8 +52,7 @@ public class UsuariosController : ControllerBase
         };
         var token = tokenHandler.CreateToken(tokenDescriptor);
         var tokenString = tokenHandler.WriteToken(token);
-
-        // Retorna o token JWT
+        
         return Ok(new { Token = tokenString });
     }
 
