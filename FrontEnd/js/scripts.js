@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    // Função para carregar as tarefas
+    
     function carregarTarefas() {
         $.ajax({
             url: 'https://localhost:44388/api/Tarefas',
@@ -17,8 +17,7 @@
             }
         });
     }
-
-    // Função para mostrar os detalhes da tarefa
+    
     function mostrarDetalhes(id) {
         $.ajax({
             url: `https://localhost:44388/api/Tarefas/${id}`,
@@ -38,11 +37,9 @@
             }
         });
     }
-
-    // Carregar tarefas ao iniciar
+    
     carregarTarefas();
-
-    // Evento de clique na lista de tarefas
+    
     $('#tarefas-lista').on('click', '.list-group-item', function () {
         var tarefaId = $(this).data('id');
         mostrarDetalhes(tarefaId);
