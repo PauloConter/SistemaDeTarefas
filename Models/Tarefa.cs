@@ -21,8 +21,7 @@ public class Tarefa
 
     [Required]
     public int CategoriaId { get; set; }
-
-    // Navegação opcional
+    
     public Usuario Usuario { get; set; }
     public Categoria Categoria { get; set; }
 }
