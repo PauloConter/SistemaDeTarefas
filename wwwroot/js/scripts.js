@@ -1,8 +1,8 @@
 ﻿$(document).ready(function () {
-    
+
     function carregarTarefas() {
         $.ajax({
-            url: 'https://localhost:7008',
+            url: 'https://localhost:7008/api/Tarefas',  // URL para listagem de tarefas
             method: 'GET',
             success: function (tarefas) {
                 $('#tarefas-lista').empty();
@@ -17,10 +17,10 @@
             }
         });
     }
-    
+
     function mostrarDetalhes(id) {
         $.ajax({
-            url: `https://localhost:7008`,
+            url: `https://localhost:7008/api/Tarefas/${id}`,  // URL para detalhes da tarefa
             method: 'GET',
             success: function (tarefa) {
                 $('#tarefa-detalhes').html(
@@ -37,11 +37,12 @@
             }
         });
     }
-    
+
     carregarTarefas();
-    
+
     $('#tarefas-lista').on('click', '.list-group-item', function () {
         var tarefaId = $(this).data('id');
         mostrarDetalhes(tarefaId);
     });
 });
+

@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: darkblue; /* Ajuste a cor do texto conforme necessário */
+    color: black; /* Ajuste a cor do texto conforme necessário */
 }
 
 .container {
@@ -15,12 +15,11 @@
 
 .card {
     padding: 20px;
-    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
 }
 
 .list-group-item {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
-    color: black; /* Ajuste a cor do texto conforme necessário */
+    color: blue; /* Ajuste a cor do texto conforme necessário */
 }
