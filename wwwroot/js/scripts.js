@@ -2,7 +2,7 @@
     
     function carregarTarefas() {
         $.ajax({
-            url: 'https://localhost:7008/api/Tarefas',
+            url: 'https://localhost:7008',
             method: 'GET',
             success: function (tarefas) {
                 $('#tarefas-lista').empty();
@@ -20,7 +20,7 @@
     
     function mostrarDetalhes(id) {
         $.ajax({
-            url: `https://localhost:7008/api/Tarefas/${id}`,
+            url: `https://localhost:7008`,
             method: 'GET',
             success: function (tarefa) {
                 $('#tarefa-detalhes').html(
