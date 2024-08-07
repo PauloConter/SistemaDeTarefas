@@ -13,7 +13,7 @@ Este projeto é um sistema de tarefas com um front-end desenvolvido com Bootstra
 
 ## Requisitos
 
-- Servidor da API rodando em `https://localhost:7008`.
+- Servidor da API rodando em `https://localhost:7008/api/Tarefas`.
 - Navegador moderno com suporte a ES6.
 - Configuração CORS no back-end para permitir requisições do front-end.
 
